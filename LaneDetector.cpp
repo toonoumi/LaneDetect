@@ -195,7 +195,7 @@ bool LaneDetector::findObj_cp(Mat frame)
 		ldxcount_cp = 0;
 		rdxcount_cp = 0;
 	}
-	if (ldxcount_cp > STORE_SIZE && rdxcount_cp > STORE_SIZE) {
+	if (ldxcount_cp > STORE_SIZE && rdxcount_cp > STORE_SIZE ) {
 		isValid = true;
 		laveragedelta = averageDelta(ldx_cp);
 		raveragedelta = averageDelta(rdx_cp);
@@ -283,12 +283,12 @@ bool LaneDetector::findObj_cp(Mat frame)
 	if (isValid) {
 		printPoint_cp(frame);
 	}
-	if (lborderPointCount>10 && rborderPointCount>10 && isValid) {
-		if (abs(lborder[1].x - aim) < WARNGING_THRESH/10*6) {
+	if (lborderPointCount>10 && rborderPointCount>10 && isValid &&fails_cp==0) {
+		if (abs(lborder[1].x - aim) < WARNGING_THRESH/10*6&&lNotFail) {
 			//left warning
 			cout << "Watch Left!" << endl;
 		}
-		if (abs(rborder[1].x - aim) < WARNGING_THRESH/10*6) {
+		if (abs(rborder[1].x - aim) < WARNGING_THRESH/10*6&&rNotFail) {
 			//right warning
 			cout << "Watch Right!" << endl;
 		}
@@ -405,12 +405,12 @@ bool LaneDetector::findObj(Mat frame)
 	if (isValid) {
 		printPoint(frame);
 	}
-	if (lborderPointCount>10&&rborderPointCount>10&&isValid) {
-		if (abs(lborder[0].x - aim) < WARNGING_THRESH) {
+	if (lborderPointCount>10&&rborderPointCount>10&&isValid&&fails==0) {
+		if (abs(lborder[0].x - aim) < WARNGING_THRESH&&lNotFail) {
 			//left warning
 			cout << "Watch Left!" << endl;
 		}
-		if (abs(rborder[0].x - aim) < WARNGING_THRESH) {
+		if (abs(rborder[0].x - aim) < WARNGING_THRESH&&rNotFail) {
 			//right warning
 			cout << "Watch Right!" << endl;
 		}
@@ -428,15 +428,21 @@ bool LaneDetector::StartCapturing()
 	
 	if (videoFileName == "Cam") {
 		VideoCapture capture(0);
+		//capture.set(16, 50);
+		//capture.set(13, 100000);
 		rtn = true;
 		while (1) {
 			Mat frame;
 			capture >> frame;
+			
 			if (frame.empty()) {
 				break;
 			}
 			Mat cpy_frame = frame.clone();
 			cpy_frame = cpy_frame(Rect(0, frame.rows / 2, frame.cols, frame.rows / 2));
+			//blur(cpy_frame, cpy_frame, Size(4, 4));
+			//Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
+			//erode(cpy_frame, cpy_frame,element);
 			//cpy_frame = cpy_frame(Rect(5, frame.rows / 2, frame.cols, frame.rows / 2));
 			aim = cpy_frame.cols / 2 + AIM_OFFSET;
 			findObj(cpy_frame);
