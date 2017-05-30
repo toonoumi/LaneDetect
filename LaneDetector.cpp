@@ -132,6 +132,9 @@ void LaneDetector::fillNotRed(Mat frame)
 		}
 	}*/
 }
+bool isBorder(Mat frame,Point pt) {
+	return false;
+}
 bool isBorder(Vec3b p1, Vec3b p2) {
 	int sum1 = p1.val[0] + p1.val[1] + p1.val[2];
 	int sum2 = p2.val[0] + p2.val[1] + p2.val[2];
@@ -141,13 +144,16 @@ bool isBorder(Vec3b p1, Vec3b p2) {
 	return false;
 }
 #define WHITE_THRESH 25
-#define YELLOW_THRESH 50
+#define YELLOW_THRESH 100
+#define WHITE_RANGE 200
 bool isYellowOrWhite(Vec3b color) {
 	bool isYellow = false, isWhite = false;
 	if (abs(color.val[1] - color.val[2]) < WHITE_THRESH&&abs(color.val[0] - color.val[2]) && abs(color.val[0] - color.val[1])) {
-		isWhite = true;
+		if (255 - color.val[0] < WHITE_RANGE && 255 - color.val[1] < WHITE_RANGE && 255 - color.val[2] < WHITE_RANGE) {
+			isWhite = true;
+		}
 	}
-	if (abs(color.val[1] - color.val[2]) < WHITE_THRESH&&color.val[2] - color.val[0] > YELLOW_THRESH && color.val[1] - color.val[0] > YELLOW_THRESH) {
+	if (abs(color.val[1] - color.val[2]) < YELLOW_THRESH&&color.val[2] - color.val[0] > YELLOW_THRESH && color.val[1] - color.val[0] > YELLOW_THRESH) {
 		isYellow = true;
 	}
 	return isYellow || isWhite;
@@ -428,17 +434,22 @@ bool LaneDetector::StartCapturing()
 	
 	if (videoFileName == "Cam") {
 		VideoCapture capture(0);
-		//capture.set(16, 50);
+		
+		capture.set(CAP_PROP_EXPOSURE, -2);
+		capture.set(CAP_PROP_SETTINGS, 0);
+		//capture.set();
 		//capture.set(13, 100000);
 		rtn = true;
 		while (1) {
 			Mat frame;
 			capture >> frame;
-			
+			//frame = frame - Scalar(100, 100, 100);
 			if (frame.empty()) {
 				break;
 			}
 			Mat cpy_frame = frame.clone();
+			
+			//cvtColor(cpy_frame, cpy_frame, CV_BGR2HSV);
 			cpy_frame = cpy_frame(Rect(0, frame.rows / 2, frame.cols, frame.rows / 2));
 			//blur(cpy_frame, cpy_frame, Size(4, 4));
 			//Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
