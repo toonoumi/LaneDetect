@@ -4,15 +4,20 @@
 LaneDetector::LaneDetector()
 {
 	videoFileName = "Cam";
+	wiringPiSetup ()  ;
+  	softPwmCreate (1, 0, 100) ;
 }
 
 LaneDetector::LaneDetector(string filename)
 {
+	wiringPiSetup ()  ;
+  	softPwmCreate (1, 0, 100) ;
 	videoFileName = filename;
 }
 
 LaneDetector::~LaneDetector()
 {
+	//delete[] t1;
 }
 
 
@@ -414,12 +419,21 @@ bool LaneDetector::findObj(Mat frame)
 	if (lborderPointCount>10&&rborderPointCount>10&&isValid&&fails==0) {
 		if (abs(lborder[0].x - aim) < WARNGING_THRESH&&lNotFail) {
 			//left warning
-			cout << "Watch Left!" << endl;
+			cout << "Watch Left! \a" << endl;
+			softPwmWrite (1, 50) ;
+			//t1 = new thread(beep);
 		}
 		if (abs(rborder[0].x - aim) < WARNGING_THRESH&&rNotFail) {
 			//right warning
-			cout << "Watch Right!" << endl;
+			//t1 = new thread(beep);
+			softPwmWrite (1, 50) ;
+			cout << "Watch Right! \a" << endl;
 		}
+	}
+	else
+	{
+		//t1->join();
+		softPwmWrite (1, 0) ;
 	}
 	findObj_cp(frame);
 	return true;
@@ -435,8 +449,8 @@ bool LaneDetector::StartCapturing()
 	if (videoFileName == "Cam") {
 		VideoCapture capture(0);
 		
-		capture.set(CAP_PROP_EXPOSURE, -2);
-		capture.set(CAP_PROP_SETTINGS, 0);
+		//capture.set(CAP_PROP_EXPOSURE, -2);
+		//capture.set(CAP_PROP_SETTINGS, 0);
 		//capture.set();
 		//capture.set(13, 100000);
 		rtn = true;
@@ -489,4 +503,9 @@ bool LaneDetector::StartCapturing()
 		}
 	}
 	return rtn;
+}
+
+void LaneDetector::beep()
+{
+	system("sudo ./pwm");
 }

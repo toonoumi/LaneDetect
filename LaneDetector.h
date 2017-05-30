@@ -2,11 +2,19 @@
 #include<string>
 #include<fstream>
 #include<stack>
-#include "opencv2\opencv.hpp"
-#include "opencv2\core.hpp"
-#include "opencv2\highgui\highgui.hpp"
-#include "opencv2\features2d\features2d.hpp"
-#include "opencv2\imgproc.hpp"
+#include "opencv2/opencv.hpp"
+#include "opencv2/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/features2d/features2d.hpp"
+#include "opencv2/imgproc.hpp"
+#include <thread>
+
+#include <stdio.h>
+#include <errno.h>
+#include <string.h>
+#include <wiringPi.h>
+#include <softPwm.h>
+
 #define IDENTIFIER_NUM 1000
 #define CROSS_WIDTH 15
 #define BORDER_TOL 765-20
@@ -43,6 +51,7 @@ public:
 	bool findObj_cp(Mat frame);
 	void printPoint(Mat frame);
 	void printPoint_cp(Mat frame);
+	static void beep();
 private:
 	Point lborder[6];
 	int lborderPointCount = 0;
@@ -67,4 +76,6 @@ private:
 	int identifiercount = 0;
 	int redToGreenDiff = 30;
 	int redToBlueDiff = 80;
+	thread *t1;
+	
 };

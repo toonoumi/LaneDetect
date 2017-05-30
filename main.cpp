@@ -2,7 +2,7 @@
 #include"LaneDetector.h"
 using namespace std;
 int main() {
-	LaneDetector rb("road.avi");
+	LaneDetector rb("Cam");
 	rb.StartCapturing();
 	return 0;
 }
