@@ -21,122 +21,13 @@ LaneDetector::~LaneDetector()
 }
 
 
-
-void LaneDetector::findBar(Mat&frame, char letterColor) {
-	
-	drawIdentifier(frame);
-}
-
-void LaneDetector::drawIdentifier(Mat&frame)
-{
-
-	for (int i = 0; i < identifiercount; i++) {
-
-			line(frame, identifier[i].start, identifier[i].end, identifier[i].color, 4);
-			//rectangle(frame, identifier[i].start, identifier[i].pair->end, Scalar(0, 255, 255));
-	}
-	//rectangle(frame, min, max, Scalar(0, 255, 255));
-
-}
-
 bool LaneDetector::readInfo(string filename)
 {
 	//TODO
 	return false;
 }
 
-bool LaneDetector::isRed(Vec3b color)
-{
-	if (color.val[2] - color.val[1] > redToGreenDiff) {
-		if (color.val[2] - color.val[0] > redToBlueDiff) {
-			return true;
-		}
-	}
-	return false;
-}
 
-bool LaneDetector::isBlue(Vec3b color)
-{
-	//TODO
-	return false;
-}
-
-bool isBlack(Vec3b color) {
-	if (color.val[0] == 0 && color.val[1] == 0 && color.val[2] == 0) {
-		return true;
-	}
-	return false;
-}
-
-void LaneDetector::fillNotRed(Mat frame)
-{
-	
-	//cvtColor(frame, frame, CV_BGR2HSV);
-
-	//threshold(frame, frame, 240, 255, THRESH_BINARY);
-	//cvtColor(frame, frame, CV_HSV2BGR);
-
-	//inRange(frame, Scalar(0, 100, 100), Scalar(10,255, 255), frame);
-	/*MatIterator_<Vec3b> it;
-	it = frame.begin<Vec3b>();
-	for (; it != frame.end<Vec3b>(); it++) {
-		if (!isRed(*it)) {
-			Vec3b black(0, 0, 0);
-			*it = black;
-		}
-	}*/
-	//frame.at<Vec3d>(Point(0, 0)) = Vec3b(0, 0, 0);
-	for (int i = 0; i < frame.rows; i++) {
-		for (int j = 0; j < frame.cols; j++) {
-			if (!isRed(frame.at<Vec3b>(i, j))) {
-				Vec3b black(0, 0, 0);
-				frame.at<Vec3b>(i,j) = black;
-			}
-			else {
-				j += 3;
-			}
-		}
-	}
-	/*
-	stack<Point> myStack;
-	Point seed(0, 0);
-	myStack.push(seed);
-	while (!myStack.empty()) {
-		Point catcher = myStack.top();
-		myStack.pop();
-		Vec3b black(0, 0, 0);
-		frame.at<Vec3b>(catcher) = black;
-
-		if (catcher.x - 1 >= 0) {
-			if (!isBlack(frame.at<Vec3b>(Point(catcher.x - 1, catcher.y)))) {
-				if (!isRed(frame.at<Vec3b>(Point(catcher.x - 1, catcher.y)))) {
-					myStack.push(Point(catcher.x - 1, catcher.y));
-				}
-			}
-		}
-		if (catcher.y - 1 >= 0) {
-			if (!isBlack(frame.at<Vec3b>(Point(catcher.x, catcher.y - 1)))) {
-				if (!isRed(frame.at<Vec3b>(Point(catcher.x, catcher.y - 1)))) {
-					myStack.push(Point(catcher.x, catcher.y - 1));
-				}
-			}
-		}
-		if (catcher.x + 1 < frame.cols) {
-			if (!isBlack(frame.at<Vec3b>(Point(catcher.x + 1, catcher.y)))) {
-				if (!isRed(frame.at<Vec3b>(Point(catcher.x + 1, catcher.y)))) {
-					myStack.push(Point(catcher.x + 1, catcher.y));
-				}
-			}
-		}
-		if (catcher.y + 1 < frame.rows) {
-			if (!isBlack(frame.at<Vec3b>(Point(catcher.x, catcher.y + 1)))) {
-				if (!isRed(frame.at<Vec3b>(Point(catcher.x, catcher.y + 1)))) {
-					myStack.push(Point(catcher.x, catcher.y + 1));
-				}
-			}
-		}
-	}*/
-}
 bool isBorder(Mat frame,Point pt) {
 	return false;
 }
@@ -148,9 +39,7 @@ bool isBorder(Vec3b p1, Vec3b p2) {
 	}
 	return false;
 }
-#define WHITE_THRESH 25
-#define YELLOW_THRESH 100
-#define WHITE_RANGE 200
+
 bool isYellowOrWhite(Vec3b color) {
 	bool isYellow = false, isWhite = false;
 	if (abs(color.val[1] - color.val[2]) < WHITE_THRESH&&abs(color.val[0] - color.val[2]) && abs(color.val[0] - color.val[1])) {
@@ -171,8 +60,7 @@ void LaneDetector::printPoint_cp(Mat frame) {
 	circle(frame, lborder[1], 10, Scalar(0, 0, 255), 2);
 	circle(frame, rborder[1], 10, Scalar(255, 0, 255), 2);
 }
-#define DELTA_THRESH 80
-#define STORE_SIZE 3
+
 int averageDelta(int*dx) {
 	int av = 0;
 	for (int i = 0; i < STORE_SIZE; i++) {
