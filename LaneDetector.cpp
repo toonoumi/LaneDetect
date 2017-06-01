@@ -4,20 +4,15 @@
 LaneDetector::LaneDetector()
 {
 	videoFileName = "Cam";
-	wiringPiSetup ()  ;
-  	softPwmCreate (1, 0, 100) ;
 }
 
 LaneDetector::LaneDetector(string filename)
 {
-	wiringPiSetup ()  ;
-  	softPwmCreate (1, 0, 100) ;
 	videoFileName = filename;
 }
 
 LaneDetector::~LaneDetector()
 {
-	//delete[] t1;
 }
 
 
@@ -82,7 +77,6 @@ bool LaneDetector::findObj_cp(Mat frame)
 	//erode(frame, frame, element);
 	Mat element2 = getStructuringElement(MORPH_RECT, Size(2, 2));
 	dilate(frame, frame, element2);*/
-	int avl = 0, avr = 0;
 	bool bordered = false;
 	int count = 0;
 	bool isValid = false;
@@ -202,7 +196,6 @@ bool LaneDetector::findObj(Mat frame)
 	//erode(frame, frame, element);
 	Mat element2 = getStructuringElement(MORPH_RECT, Size(2, 2));
 	dilate(frame, frame, element2);*/
-	int avl = 0, avr = 0;
 	bool bordered = false;
 	int count = 0;
 	bool isValid = false;
@@ -308,20 +301,11 @@ bool LaneDetector::findObj(Mat frame)
 		if (abs(lborder[0].x - aim) < WARNGING_THRESH&&lNotFail) {
 			//left warning
 			cout << "Watch Left! \a" << endl;
-			softPwmWrite (1, 50) ;
-			//t1 = new thread(beep);
 		}
 		if (abs(rborder[0].x - aim) < WARNGING_THRESH&&rNotFail) {
 			//right warning
-			//t1 = new thread(beep);
-			softPwmWrite (1, 50) ;
 			cout << "Watch Right! \a" << endl;
 		}
-	}
-	else
-	{
-		//t1->join();
-		softPwmWrite (1, 0) ;
 	}
 	findObj_cp(frame);
 	return true;
@@ -330,7 +314,7 @@ bool LaneDetector::findObj(Mat frame)
 bool LaneDetector::StartCapturing()
 {
 	bool rtn = false;
-	bool allDataSet = readInfo("data.info");
+	//bool allDataSet = readInfo("data.info");
 	
 
 	
@@ -361,9 +345,7 @@ bool LaneDetector::StartCapturing()
 			findObj(cpy_frame);
 			line(cpy_frame, Point(aim, 0), Point(aim, cpy_frame.rows), Scalar(0, 255, 255), 2);
 			imshow("CamCap", cpy_frame);		
-			if (waitKey(10) >= 0) { 
-				break;
-			}
+            waitKey(10);
 		}
 	}
 	else {
@@ -391,9 +373,4 @@ bool LaneDetector::StartCapturing()
 		}
 	}
 	return rtn;
-}
-
-void LaneDetector::beep()
-{
-	system("sudo ./pwm");
 }

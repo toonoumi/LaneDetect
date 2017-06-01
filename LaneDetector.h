@@ -1,4 +1,5 @@
-#pragma once
+#ifndef LANEDETECT
+#define LANEDETECT
 #include<string>
 #include<fstream>
 #include<stack>
@@ -7,14 +8,6 @@
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv2/features2d/features2d.hpp"
 #include "opencv2/imgproc.hpp"
-#include <thread>
-
-#include <stdio.h>
-#include <errno.h>
-#include <string.h>
-#include <wiringPi.h>
-#include <softPwm.h>
-
 
 #define AIM_OFFSET 45      //Setting
 #define WARNGING_THRESH 120
@@ -36,7 +29,6 @@ public:
 	bool findObj_cp(Mat frame);
 	void printPoint(Mat frame);
 	void printPoint_cp(Mat frame);
-	static void beep();
 private:
 	Point lborder[6];
 	int lborderPointCount = 0;
@@ -54,6 +46,7 @@ private:
 	int fails_cp = 0;
 	int aim = 0;
 	string videoFileName;
-	thread *t1;
 	
 };
+
+#endif
