@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C278DC57320C4B33B39289D2 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 57FC67BFCF664814AC80C0BB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				371DCA76D53B416393497C48 /* CMake Rules */,
+			);
+			dependencies = (
+				D515BCC62D3E45A2B8070B2C /* PBXTargetDependency */,
+				00419D0410144A8DB3BCD30A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D0286BF207ED418CBC97D24C /* carui_automoc */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 448EB4E379824AF28D95E26F /* Build configuration list for PBXAggregateTarget "carui_automoc" */;
+			buildPhases = (
+				13B773A263394B61A774C091 /* CMake Rules */,
+			);
+			dependencies = (
+				4927427DA0424FB2B3A5EC7C /* PBXTargetDependency */,
+			);
+			name = carui_automoc;
+			productName = carui_automoc;
+		};
+		E421AD8E53474903A4C98F4F /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7DB46C0CC73C47ECACF12DB1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				D92EE8B1C85A438EADA0451A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		029F430B06294591AD19DC10 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 08B4317CC5A243759B36D366 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */; };
+		08F16D8AE87F41D4A1FB5F50 /* /Users/YunfeiGuo/Desktop/ui_car/view.hpp */ = {isa = PBXBuildFile; fileRef = D80FE59AC5AE4C84BE74DB08 /* /Users/YunfeiGuo/Desktop/ui_car/view.hpp */; };
+		120EC16BFE6545EA8C121799 /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.hpp */ = {isa = PBXBuildFile; fileRef = 646C2064D23549438D068CAB /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.hpp */; };
+		1770B2EB9F46418B83F7B040 /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.cpp */ = {isa = PBXBuildFile; fileRef = C71FD5C2614D47DDA678527A /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.cpp */; };
+		255A82FBE4F644E4AD6A5164 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.hpp */ = {isa = PBXBuildFile; fileRef = E0E6E3D1C4454605B41FD816 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.hpp */; };
+		28D5607897AC49F696B8ECAC /* /Users/YunfeiGuo/Desktop/ui_car/mainwindow.cpp */ = {isa = PBXBuildFile; fileRef = 063D65AF220042789D4C11D5 /* /Users/YunfeiGuo/Desktop/ui_car/mainwindow.cpp */; };
+		6E41142282694C30B055A941 /* /Users/YunfeiGuo/Desktop/ui_car/main.cpp */ = {isa = PBXBuildFile; fileRef = 718907E02B2F4D86A0467CEC /* /Users/YunfeiGuo/Desktop/ui_car/main.cpp */; };
+		7D2D094C47444E2A9BDF1A80 /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.cpp */ = {isa = PBXBuildFile; fileRef = 4F3B578C80FA4B41A84D1C2A /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.cpp */; };
+		A7941D6398A44C079D15711B /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.hpp */ = {isa = PBXBuildFile; fileRef = 20C89DEAEA544B45BD7DD031 /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.hpp */; };
+		D85DF95578B44A2F94EEBC40 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.cpp */ = {isa = PBXBuildFile; fileRef = B1F738A0B18E43AAB9FC2198 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.cpp */; };
+		E4EA6821A00344AFAAB3F657 /* /Users/YunfeiGuo/Desktop/ui_car/build/carui_automoc.cpp */ = {isa = PBXBuildFile; fileRef = 5839D3A9BCC345BC9A34B1DF /* /Users/YunfeiGuo/Desktop/ui_car/build/carui_automoc.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		26C1AD130F1E4E50A6948EA9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		5BB314B8D9BB48EBB1377B17 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		ADADFAEAF1BE46BBB62E7D82 = {
+			isa = PBXBuildStyle;
+		};
+		DC44D9DB10134ECFAA45D482 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F5949CF918CB41D8925F40EE /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0CA0249FB133463A924D3CF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0286BF207ED418CBC97D24C;
+			remoteInfo = carui_automoc;
+		};
+		206DB1652B214B8184BA39BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E421AD8E53474903A4C98F4F;
+			remoteInfo = ZERO_CHECK;
+		};
+		36D64CB39CF446E6B39888AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8808DA1269CC483B925C7B6C;
+			remoteInfo = carui;
+		};
+		CB9AD5B0321C4EDA8B13216F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E421AD8E53474903A4C98F4F;
+			remoteInfo = ZERO_CHECK;
+		};
+		CF57F0D3D23D4AE4B15FA3A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E421AD8E53474903A4C98F4F;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		063D65AF220042789D4C11D5 /* /Users/YunfeiGuo/Desktop/ui_car/mainwindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mainwindow.cpp; path = mainwindow.cpp; sourceTree = SOURCE_ROOT; };
+		08B4317CC5A243759B36D366 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		20C89DEAEA544B45BD7DD031 /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LaneDetector.hpp; path = LaneDetector.hpp; sourceTree = SOURCE_ROOT; };
+		23BD4F670A894C9D8B6BBE39 /* carui */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = carui; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3B578C80FA4B41A84D1C2A /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LaneDetector.cpp; path = LaneDetector.cpp; sourceTree = SOURCE_ROOT; };
+		5839D3A9BCC345BC9A34B1DF /* /Users/YunfeiGuo/Desktop/ui_car/build/carui_automoc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = carui_automoc.cpp; path = build/carui_automoc.cpp; sourceTree = SOURCE_ROOT; };
+		646C2064D23549438D068CAB /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = thread_front.hpp; path = thread_front.hpp; sourceTree = SOURCE_ROOT; };
+		718907E02B2F4D86A0467CEC /* /Users/YunfeiGuo/Desktop/ui_car/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		A6A905809DE84EF1B505195A /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B1F738A0B18E43AAB9FC2198 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_back.cpp; path = thread_back.cpp; sourceTree = SOURCE_ROOT; };
+		C71FD5C2614D47DDA678527A /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = thread_front.cpp; path = thread_front.cpp; sourceTree = SOURCE_ROOT; };
+		D80FE59AC5AE4C84BE74DB08 /* /Users/YunfeiGuo/Desktop/ui_car/view.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = view.hpp; path = view.hpp; sourceTree = SOURCE_ROOT; };
+		E0E6E3D1C4454605B41FD816 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = thread_back.hpp; path = thread_back.hpp; sourceTree = SOURCE_ROOT; };
+		F011BC9430F84F3C9AB637E8 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F74C2C261EFF4514A78DEEF2 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		184A077E5CD54DF48EB5623B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				6D0627E2287A4ABAB58FF933 /* CMake Rules */,
+				F011BC9430F84F3C9AB637E8 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		35BE20F6789E4EF2BED8FBEE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		38967F4CFCE44BFD8A1C9560 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5F6720D125DE4F7983CE4EEC /* carui */,
+				893AC9ABBE104BF19E8D2BA3 /* carui_automoc */,
+				184A077E5CD54DF48EB5623B /* ALL_BUILD */,
+				D6DCDCB8D5D5416A92276006 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		5F6720D125DE4F7983CE4EEC /* carui */ = {
+			isa = PBXGroup;
+			children = (
+				F7DA0E79518E40D5B1E2D221 /* Source Files */,
+				A944F7577A7242FCA0916EA9 /* Header Files */,
+				08B4317CC5A243759B36D366 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */,
+			);
+			name = carui;
+			sourceTree = "<group>";
+		};
+		6D0627E2287A4ABAB58FF933 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		750515744314472FB0A2B1A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		893AC9ABBE104BF19E8D2BA3 /* carui_automoc */ = {
+			isa = PBXGroup;
+			children = (
+				35BE20F6789E4EF2BED8FBEE /* CMake Rules */,
+				A6A905809DE84EF1B505195A /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */,
+			);
+			name = carui_automoc;
+			sourceTree = "<group>";
+		};
+		A944F7577A7242FCA0916EA9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				20C89DEAEA544B45BD7DD031 /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.hpp */,
+				E0E6E3D1C4454605B41FD816 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.hpp */,
+				646C2064D23549438D068CAB /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.hpp */,
+				D80FE59AC5AE4C84BE74DB08 /* /Users/YunfeiGuo/Desktop/ui_car/view.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C5760FA284BA477F98E71DAD = {
+			isa = PBXGroup;
+			children = (
+				38967F4CFCE44BFD8A1C9560 /* Sources */,
+				750515744314472FB0A2B1A3 /* Resources */,
+				CF1C891CD24C4ADFAC558D08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9C794E9FEE24FD285FF78B0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CF1C891CD24C4ADFAC558D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23BD4F670A894C9D8B6BBE39 /* carui */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6DCDCB8D5D5416A92276006 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				C9C794E9FEE24FD285FF78B0 /* CMake Rules */,
+				F74C2C261EFF4514A78DEEF2 /* /Users/YunfeiGuo/Desktop/ui_car/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		F7DA0E79518E40D5B1E2D221 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F3B578C80FA4B41A84D1C2A /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.cpp */,
+				5839D3A9BCC345BC9A34B1DF /* /Users/YunfeiGuo/Desktop/ui_car/build/carui_automoc.cpp */,
+				718907E02B2F4D86A0467CEC /* /Users/YunfeiGuo/Desktop/ui_car/main.cpp */,
+				063D65AF220042789D4C11D5 /* /Users/YunfeiGuo/Desktop/ui_car/mainwindow.cpp */,
+				B1F738A0B18E43AAB9FC2198 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.cpp */,
+				C71FD5C2614D47DDA678527A /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8808DA1269CC483B925C7B6C /* carui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 116EDFA90A714A409D2FDE1F /* Build configuration list for PBXNativeTarget "carui" */;
+			buildPhases = (
+				CD2F7FEACAA94F048F37E00B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB94E51FE054D32A58BA422 /* PBXTargetDependency */,
+				872C295CE7AC4674BB2E5F8D /* PBXTargetDependency */,
+			);
+			name = carui;
+			productName = carui;
+			productReference = 23BD4F670A894C9D8B6BBE39 /* carui */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BCBB02FE04B41B888D2CF98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 8FA2375C41FD477F96BA6656 /* Build configuration list for PBXProject "CAR_UI" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				DC44D9DB10134ECFAA45D482 /* Debug */,
+				5BB314B8D9BB48EBB1377B17 /* Release */,
+				26C1AD130F1E4E50A6948EA9 /* MinSizeRel */,
+				F5949CF918CB41D8925F40EE /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = C5760FA284BA477F98E71DAD;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				C278DC57320C4B33B39289D2 /* ALL_BUILD */,
+				E421AD8E53474903A4C98F4F /* ZERO_CHECK */,
+				8808DA1269CC483B925C7B6C /* carui */,
+				D0286BF207ED418CBC97D24C /* carui_automoc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13B773A263394B61A774C091 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/YunfeiGuo/Desktop/ui_car/build -f /Users/YunfeiGuo/Desktop/ui_car/build/CMakeScripts/carui_automoc_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		371DCA76D53B416393497C48 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/YunfeiGuo/Desktop/ui_car/build -f /Users/YunfeiGuo/Desktop/ui_car/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AD90E59F60104B5CB13089E8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B94660B440294539AA548048 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D423D03F3A5D4030B5EB7FF0 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D92EE8B1C85A438EADA0451A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/YunfeiGuo/Desktop/ui_car/build -f /Users/YunfeiGuo/Desktop/ui_car/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2F7FEACAA94F048F37E00B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D2D094C47444E2A9BDF1A80 /* /Users/YunfeiGuo/Desktop/ui_car/LaneDetector.cpp */,
+				E4EA6821A00344AFAAB3F657 /* /Users/YunfeiGuo/Desktop/ui_car/build/carui_automoc.cpp */,
+				6E41142282694C30B055A941 /* /Users/YunfeiGuo/Desktop/ui_car/main.cpp */,
+				28D5607897AC49F696B8ECAC /* /Users/YunfeiGuo/Desktop/ui_car/mainwindow.cpp */,
+				D85DF95578B44A2F94EEBC40 /* /Users/YunfeiGuo/Desktop/ui_car/thread_back.cpp */,
+				1770B2EB9F46418B83F7B040 /* /Users/YunfeiGuo/Desktop/ui_car/thread_front.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00419D0410144A8DB3BCD30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E421AD8E53474903A4C98F4F /* ZERO_CHECK */;
+			targetProxy = 206DB1652B214B8184BA39BA /* PBXContainerItemProxy */;
+		};
+		4927427DA0424FB2B3A5EC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E421AD8E53474903A4C98F4F /* ZERO_CHECK */;
+			targetProxy = CB9AD5B0321C4EDA8B13216F /* PBXContainerItemProxy */;
+		};
+		872C295CE7AC4674BB2E5F8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E421AD8E53474903A4C98F4F /* ZERO_CHECK */;
+			targetProxy = CF57F0D3D23D4AE4B15FA3A5 /* PBXContainerItemProxy */;
+		};
+		D515BCC62D3E45A2B8070B2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8808DA1269CC483B925C7B6C /* carui */;
+			targetProxy = 36D64CB39CF446E6B39888AC /* PBXContainerItemProxy */;
+		};
+		FFB94E51FE054D32A58BA422 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0286BF207ED418CBC97D24C /* carui_automoc */;
+			targetProxy = 0CA0249FB133463A924D3CF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		013FA4B391CB4ED0959D29DA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build/build;
+			};
+			name = MinSizeRel;
+		};
+		0EF0A5CADFA74BFAA5E946C7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		24889F5EF120490DBFE17D6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui_automoc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		28EBE9819D224AAB8F35128C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui_automoc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3C8F68D052724082BD060DF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt5/5.8.0_1/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_WIDGETS_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car,/usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt5/5.8.0_1/./mkspecs/macx-clang",/usr/local/Cellar/opencv3/3.2.0/include,/usr/local/Cellar/opencv3/3.2.0/include/opencv);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/Cellar/opencv3/3.2.0/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_shape.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_stitching.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_superres.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videostab.3.2.0.dylib /usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/QtGui /usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/QtCore /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_objdetect.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_calib3d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_features2d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_flann.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_highgui.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_ml.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_photo.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_video.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videoio.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgcodecs.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgproc.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_core.3.2.0.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		48BD253882804B98AABD7941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui_automoc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		62EA88099F294D62A5103868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		65F2A945AFDF4BE18E56C814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build/build;
+			};
+			name = Release;
+		};
+		6E6240D7EBED4495BB2EA5E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt5/5.8.0_1/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_WIDGETS_LIB,QT_GUI_LIB,QT_CORE_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car,/usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt5/5.8.0_1/./mkspecs/macx-clang",/usr/local/Cellar/opencv3/3.2.0/include,/usr/local/Cellar/opencv3/3.2.0/include/opencv);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/Cellar/opencv3/3.2.0/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "   -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_shape.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_stitching.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_superres.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videostab.3.2.0.dylib /usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/QtGui /usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/QtCore /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_objdetect.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_calib3d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_features2d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_flann.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_highgui.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_ml.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_photo.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_video.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videoio.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgcodecs.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgproc.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_core.3.2.0.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7426943F444849EBB5928F78 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt5/5.8.0_1/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_WIDGETS_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car,/usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt5/5.8.0_1/./mkspecs/macx-clang",/usr/local/Cellar/opencv3/3.2.0/include,/usr/local/Cellar/opencv3/3.2.0/include/opencv);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/Cellar/opencv3/3.2.0/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_shape.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_stitching.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_superres.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videostab.3.2.0.dylib /usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/QtGui /usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/QtCore /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_objdetect.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_calib3d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_features2d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_flann.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_highgui.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_ml.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_photo.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_video.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videoio.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgcodecs.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgproc.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_core.3.2.0.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7C7204BBB92D4299B4D3022F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8BE60960CD844614BFDA0262 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A1881A0795DC4F859A26DE43 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AA2318E3BB9440EC9ACC162B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt5/5.8.0_1/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",QT_WIDGETS_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car,/usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt5/5.8.0_1/./mkspecs/macx-clang",/usr/local/Cellar/opencv3/3.2.0/include,/usr/local/Cellar/opencv3/3.2.0/include/opencv);
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = /usr/local/Cellar/opencv3/3.2.0/lib;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG -fPIC '-std=gnu++11'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt5/5.8.0_1/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_shape.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_stitching.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_superres.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videostab.3.2.0.dylib /usr/local/Cellar/qt5/5.8.0_1/lib/QtGui.framework/QtGui /usr/local/Cellar/qt5/5.8.0_1/lib/QtCore.framework/QtCore /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_objdetect.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_calib3d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_features2d.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_flann.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_highgui.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_ml.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_photo.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_video.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_videoio.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgcodecs.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_imgproc.3.2.0.dylib /usr/local/Cellar/opencv3/3.2.0/lib/libopencv_core.3.2.0.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B37CEB9BA07A468FA71E282F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C4E0F2412E14439E9F1BD838 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		D7AD2784583440DDAA8D0A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk;
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build/build;
+			};
+			name = Debug;
+		};
+		EAE2A42A995C4ACD958941D2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = carui_automoc;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F83F7D5E6D76439A9DEBE5CE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F8C2A293333F407789CC0408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/YunfeiGuo/Desktop/ui_car/build,/Users/YunfeiGuo/Desktop/ui_car);
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/YunfeiGuo/Desktop/ui_car/build;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		116EDFA90A714A409D2FDE1F /* Build configuration list for PBXNativeTarget "carui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E6240D7EBED4495BB2EA5E3 /* Debug */,
+				3C8F68D052724082BD060DF0 /* Release */,
+				AA2318E3BB9440EC9ACC162B /* MinSizeRel */,
+				7426943F444849EBB5928F78 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		448EB4E379824AF28D95E26F /* Build configuration list for PBXAggregateTarget "carui_automoc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48BD253882804B98AABD7941 /* Debug */,
+				24889F5EF120490DBFE17D6C /* Release */,
+				28EBE9819D224AAB8F35128C /* MinSizeRel */,
+				EAE2A42A995C4ACD958941D2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57FC67BFCF664814AC80C0BB /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE60960CD844614BFDA0262 /* Debug */,
+				F8C2A293333F407789CC0408 /* Release */,
+				0EF0A5CADFA74BFAA5E946C7 /* MinSizeRel */,
+				B37CEB9BA07A468FA71E282F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7DB46C0CC73C47ECACF12DB1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7204BBB92D4299B4D3022F /* Debug */,
+				62EA88099F294D62A5103868 /* Release */,
+				F83F7D5E6D76439A9DEBE5CE /* MinSizeRel */,
+				A1881A0795DC4F859A26DE43 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8FA2375C41FD477F96BA6656 /* Build configuration list for PBXProject "CAR_UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7AD2784583440DDAA8D0A36 /* Debug */,
+				65F2A945AFDF4BE18E56C814 /* Release */,
+				013FA4B391CB4ED0959D29DA /* MinSizeRel */,
+				C4E0F2412E14439E9F1BD838 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BCBB02FE04B41B888D2CF98 /* Project object */;
+}
