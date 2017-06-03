@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{310F5FCD-3525-3AF5-B361-14FC329DCD57}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>carui</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">carui.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">carui</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">carui.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">carui</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">carui.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">carui</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">carui.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">carui</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target carui</Message>
+      <Command>setlocal
+cd "C:\Users\Surface Pro\Desktop\ui_car\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/carui_autogen.dir/" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Widgetsd.lib;C:\opencv32\build\lib\Debug\opencv_stitching320d.lib;C:\opencv32\build\lib\Debug\opencv_superres320d.lib;C:\opencv32\build\lib\Debug\opencv_videostab320d.lib;C:\opencv32\build\lib\Debug\opencv_aruco320d.lib;C:\opencv32\build\lib\Debug\opencv_bgsegm320d.lib;C:\opencv32\build\lib\Debug\opencv_bioinspired320d.lib;C:\opencv32\build\lib\Debug\opencv_ccalib320d.lib;C:\opencv32\build\lib\Debug\opencv_dpm320d.lib;C:\opencv32\build\lib\Debug\opencv_fuzzy320d.lib;C:\opencv32\build\lib\Debug\opencv_line_descriptor320d.lib;C:\opencv32\build\lib\Debug\opencv_optflow320d.lib;C:\opencv32\build\lib\Debug\opencv_reg320d.lib;C:\opencv32\build\lib\Debug\opencv_saliency320d.lib;C:\opencv32\build\lib\Debug\opencv_stereo320d.lib;C:\opencv32\build\lib\Debug\opencv_structured_light320d.lib;C:\opencv32\build\lib\Debug\opencv_surface_matching320d.lib;C:\opencv32\build\lib\Debug\opencv_tracking320d.lib;C:\opencv32\build\lib\Debug\opencv_xfeatures2d320d.lib;C:\opencv32\build\lib\Debug\opencv_ximgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_xobjdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_xphoto320d.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Cored.lib;C:\opencv32\build\lib\Debug\opencv_shape320d.lib;C:\opencv32\build\lib\Debug\opencv_phase_unwrapping320d.lib;C:\opencv32\build\lib\Debug\opencv_rgbd320d.lib;C:\opencv32\build\lib\Debug\opencv_calib3d320d.lib;C:\opencv32\build\lib\Debug\opencv_video320d.lib;C:\opencv32\build\lib\Debug\opencv_datasets320d.lib;C:\opencv32\build\lib\Debug\opencv_dnn320d.lib;C:\opencv32\build\lib\Debug\opencv_face320d.lib;C:\opencv32\build\lib\Debug\opencv_plot320d.lib;C:\opencv32\build\lib\Debug\opencv_text320d.lib;C:\opencv32\build\lib\Debug\opencv_features2d320d.lib;C:\opencv32\build\lib\Debug\opencv_flann320d.lib;C:\opencv32\build\lib\Debug\opencv_objdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_ml320d.lib;C:\opencv32\build\lib\Debug\opencv_highgui320d.lib;C:\opencv32\build\lib\Debug\opencv_photo320d.lib;C:\opencv32\build\lib\Debug\opencv_videoio320d.lib;C:\opencv32\build\lib\Debug\opencv_imgcodecs320d.lib;C:\opencv32\build\lib\Debug\opencv_imgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Surface Pro/Desktop/ui_car/build/Debug/carui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Surface Pro/Desktop/ui_car/build/Debug/carui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target carui</Message>
+      <Command>setlocal
+cd "C:\Users\Surface Pro\Desktop\ui_car\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/carui_autogen.dir/" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Widgets.lib;C:\opencv32\build\lib\Release\opencv_stitching320.lib;C:\opencv32\build\lib\Release\opencv_superres320.lib;C:\opencv32\build\lib\Release\opencv_videostab320.lib;C:\opencv32\build\lib\Release\opencv_aruco320.lib;C:\opencv32\build\lib\Release\opencv_bgsegm320.lib;C:\opencv32\build\lib\Release\opencv_bioinspired320.lib;C:\opencv32\build\lib\Release\opencv_ccalib320.lib;C:\opencv32\build\lib\Release\opencv_dpm320.lib;C:\opencv32\build\lib\Release\opencv_fuzzy320.lib;C:\opencv32\build\lib\Release\opencv_line_descriptor320.lib;C:\opencv32\build\lib\Release\opencv_optflow320.lib;C:\opencv32\build\lib\Release\opencv_reg320.lib;C:\opencv32\build\lib\Release\opencv_saliency320.lib;C:\opencv32\build\lib\Release\opencv_stereo320.lib;C:\opencv32\build\lib\Release\opencv_structured_light320.lib;C:\opencv32\build\lib\Release\opencv_surface_matching320.lib;C:\opencv32\build\lib\Release\opencv_tracking320.lib;C:\opencv32\build\lib\Release\opencv_xfeatures2d320.lib;C:\opencv32\build\lib\Release\opencv_ximgproc320.lib;C:\opencv32\build\lib\Release\opencv_xobjdetect320.lib;C:\opencv32\build\lib\Release\opencv_xphoto320.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Core.lib;C:\opencv32\build\lib\Release\opencv_shape320.lib;C:\opencv32\build\lib\Release\opencv_phase_unwrapping320.lib;C:\opencv32\build\lib\Release\opencv_rgbd320.lib;C:\opencv32\build\lib\Release\opencv_calib3d320.lib;C:\opencv32\build\lib\Release\opencv_video320.lib;C:\opencv32\build\lib\Release\opencv_datasets320.lib;C:\opencv32\build\lib\Release\opencv_dnn320.lib;C:\opencv32\build\lib\Release\opencv_face320.lib;C:\opencv32\build\lib\Release\opencv_plot320.lib;C:\opencv32\build\lib\Release\opencv_text320.lib;C:\opencv32\build\lib\Release\opencv_features2d320.lib;C:\opencv32\build\lib\Release\opencv_flann320.lib;C:\opencv32\build\lib\Release\opencv_objdetect320.lib;C:\opencv32\build\lib\Release\opencv_ml320.lib;C:\opencv32\build\lib\Release\opencv_highgui320.lib;C:\opencv32\build\lib\Release\opencv_photo320.lib;C:\opencv32\build\lib\Release\opencv_videoio320.lib;C:\opencv32\build\lib\Release\opencv_imgcodecs320.lib;C:\opencv32\build\lib\Release\opencv_imgproc320.lib;C:\opencv32\build\lib\Release\opencv_core320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Surface Pro/Desktop/ui_car/build/Release/carui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Surface Pro/Desktop/ui_car/build/Release/carui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target carui</Message>
+      <Command>setlocal
+cd "C:\Users\Surface Pro\Desktop\ui_car\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/carui_autogen.dir/" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Widgets.lib;C:\opencv32\build\lib\Debug\opencv_stitching320d.lib;C:\opencv32\build\lib\Debug\opencv_superres320d.lib;C:\opencv32\build\lib\Debug\opencv_videostab320d.lib;C:\opencv32\build\lib\Debug\opencv_aruco320d.lib;C:\opencv32\build\lib\Debug\opencv_bgsegm320d.lib;C:\opencv32\build\lib\Debug\opencv_bioinspired320d.lib;C:\opencv32\build\lib\Debug\opencv_ccalib320d.lib;C:\opencv32\build\lib\Debug\opencv_dpm320d.lib;C:\opencv32\build\lib\Debug\opencv_fuzzy320d.lib;C:\opencv32\build\lib\Debug\opencv_line_descriptor320d.lib;C:\opencv32\build\lib\Debug\opencv_optflow320d.lib;C:\opencv32\build\lib\Debug\opencv_reg320d.lib;C:\opencv32\build\lib\Debug\opencv_saliency320d.lib;C:\opencv32\build\lib\Debug\opencv_stereo320d.lib;C:\opencv32\build\lib\Debug\opencv_structured_light320d.lib;C:\opencv32\build\lib\Debug\opencv_surface_matching320d.lib;C:\opencv32\build\lib\Debug\opencv_tracking320d.lib;C:\opencv32\build\lib\Debug\opencv_xfeatures2d320d.lib;C:\opencv32\build\lib\Debug\opencv_ximgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_xobjdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_xphoto320d.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Core.lib;C:\opencv32\build\lib\Debug\opencv_shape320d.lib;C:\opencv32\build\lib\Debug\opencv_phase_unwrapping320d.lib;C:\opencv32\build\lib\Debug\opencv_rgbd320d.lib;C:\opencv32\build\lib\Debug\opencv_calib3d320d.lib;C:\opencv32\build\lib\Debug\opencv_video320d.lib;C:\opencv32\build\lib\Debug\opencv_datasets320d.lib;C:\opencv32\build\lib\Debug\opencv_dnn320d.lib;C:\opencv32\build\lib\Debug\opencv_face320d.lib;C:\opencv32\build\lib\Debug\opencv_plot320d.lib;C:\opencv32\build\lib\Debug\opencv_text320d.lib;C:\opencv32\build\lib\Debug\opencv_features2d320d.lib;C:\opencv32\build\lib\Debug\opencv_flann320d.lib;C:\opencv32\build\lib\Debug\opencv_objdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_ml320d.lib;C:\opencv32\build\lib\Debug\opencv_highgui320d.lib;C:\opencv32\build\lib\Debug\opencv_photo320d.lib;C:\opencv32\build\lib\Debug\opencv_videoio320d.lib;C:\opencv32\build\lib\Debug\opencv_imgcodecs320d.lib;C:\opencv32\build\lib\Debug\opencv_imgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Surface Pro/Desktop/ui_car/build/MinSizeRel/carui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Surface Pro/Desktop/ui_car/build/MinSizeRel/carui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Surface Pro\Desktop\ui_car\build;C:\Users\Surface Pro\Desktop\ui_car;C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\include;C:\Qt\5.9\msvc2017_64\include;C:\Qt\5.9\msvc2017_64\include\QtWidgets;C:\Qt\5.9\msvc2017_64\include\QtGui;C:\Qt\5.9\msvc2017_64\include\QtANGLE;C:\Qt\5.9\msvc2017_64\include\QtCore;C:\Qt\5.9\msvc2017_64\.\mkspecs\win32-msvc;C:\opencv32\build;C:\opencv32\opencv-3.2.0\include;C:\opencv32\opencv-3.2.0\include\opencv;C:\opencv32\opencv-3.2.0\modules\core\include;C:\opencv32\opencv-3.2.0\modules\flann\include;C:\opencv32\opencv-3.2.0\modules\imgproc\include;C:\opencv32\opencv-3.2.0\modules\ml\include;C:\opencv32\opencv-3.2.0\modules\photo\include;C:\opencv32\contrib\modules\reg\include;C:\opencv32\contrib\modules\surface_matching\include;C:\opencv32\opencv-3.2.0\modules\video\include;C:\opencv32\contrib\modules\dnn\include;C:\opencv32\contrib\modules\fuzzy\include;C:\opencv32\opencv-3.2.0\modules\imgcodecs\include;C:\opencv32\opencv-3.2.0\modules\shape\include;C:\opencv32\opencv-3.2.0\modules\videoio\include;C:\opencv32\opencv-3.2.0\modules\highgui\include;C:\opencv32\opencv-3.2.0\modules\objdetect\include;C:\opencv32\contrib\modules\plot\include;C:\opencv32\opencv-3.2.0\modules\superres\include;C:\opencv32\opencv-3.2.0\modules\ts\include;C:\opencv32\contrib\modules\xobjdetect\include;C:\opencv32\contrib\modules\xphoto\include;C:\opencv32\contrib\modules\bgsegm\include;C:\opencv32\contrib\modules\bioinspired\include;C:\opencv32\contrib\modules\dpm\include;C:\opencv32\contrib\modules\face\include;C:\opencv32\opencv-3.2.0\modules\features2d\include;C:\opencv32\contrib\modules\line_descriptor\include;C:\opencv32\contrib\modules\saliency\include;C:\opencv32\contrib\modules\text\include;C:\opencv32\opencv-3.2.0\modules\calib3d\include;C:\opencv32\contrib\modules\ccalib\include;C:\opencv32\contrib\modules\datasets\include;C:\opencv32\contrib\modules\rgbd\include;C:\opencv32\contrib\modules\stereo\include;C:\opencv32\contrib\modules\tracking\include;C:\opencv32\opencv-3.2.0\modules\videostab\include;C:\opencv32\contrib\modules\xfeatures2d\include;C:\opencv32\contrib\modules\ximgproc\include;C:\opencv32\contrib\modules\aruco\include;C:\opencv32\contrib\modules\optflow\include;C:\opencv32\contrib\modules\phase_unwrapping\include;C:\opencv32\opencv-3.2.0\modules\stitching\include;C:\opencv32\contrib\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target carui</Message>
+      <Command>setlocal
+cd "C:\Users\Surface Pro\Desktop\ui_car\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/carui_autogen.dir/" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Link>
+      <AdditionalOptions>%(AdditionalOptions)  /machine:x64</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Widgets.lib;C:\opencv32\build\lib\Debug\opencv_stitching320d.lib;C:\opencv32\build\lib\Debug\opencv_superres320d.lib;C:\opencv32\build\lib\Debug\opencv_videostab320d.lib;C:\opencv32\build\lib\Debug\opencv_aruco320d.lib;C:\opencv32\build\lib\Debug\opencv_bgsegm320d.lib;C:\opencv32\build\lib\Debug\opencv_bioinspired320d.lib;C:\opencv32\build\lib\Debug\opencv_ccalib320d.lib;C:\opencv32\build\lib\Debug\opencv_dpm320d.lib;C:\opencv32\build\lib\Debug\opencv_fuzzy320d.lib;C:\opencv32\build\lib\Debug\opencv_line_descriptor320d.lib;C:\opencv32\build\lib\Debug\opencv_optflow320d.lib;C:\opencv32\build\lib\Debug\opencv_reg320d.lib;C:\opencv32\build\lib\Debug\opencv_saliency320d.lib;C:\opencv32\build\lib\Debug\opencv_stereo320d.lib;C:\opencv32\build\lib\Debug\opencv_structured_light320d.lib;C:\opencv32\build\lib\Debug\opencv_surface_matching320d.lib;C:\opencv32\build\lib\Debug\opencv_tracking320d.lib;C:\opencv32\build\lib\Debug\opencv_xfeatures2d320d.lib;C:\opencv32\build\lib\Debug\opencv_ximgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_xobjdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_xphoto320d.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\5.9\msvc2017_64\lib\Qt5Core.lib;C:\opencv32\build\lib\Debug\opencv_shape320d.lib;C:\opencv32\build\lib\Debug\opencv_phase_unwrapping320d.lib;C:\opencv32\build\lib\Debug\opencv_rgbd320d.lib;C:\opencv32\build\lib\Debug\opencv_calib3d320d.lib;C:\opencv32\build\lib\Debug\opencv_video320d.lib;C:\opencv32\build\lib\Debug\opencv_datasets320d.lib;C:\opencv32\build\lib\Debug\opencv_dnn320d.lib;C:\opencv32\build\lib\Debug\opencv_face320d.lib;C:\opencv32\build\lib\Debug\opencv_plot320d.lib;C:\opencv32\build\lib\Debug\opencv_text320d.lib;C:\opencv32\build\lib\Debug\opencv_features2d320d.lib;C:\opencv32\build\lib\Debug\opencv_flann320d.lib;C:\opencv32\build\lib\Debug\opencv_objdetect320d.lib;C:\opencv32\build\lib\Debug\opencv_ml320d.lib;C:\opencv32\build\lib\Debug\opencv_highgui320d.lib;C:\opencv32\build\lib\Debug\opencv_photo320d.lib;C:\opencv32\build\lib\Debug\opencv_videoio320d.lib;C:\opencv32\build\lib\Debug\opencv_imgcodecs320d.lib;C:\opencv32\build\lib\Debug\opencv_imgproc320d.lib;C:\opencv32\build\lib\Debug\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Surface Pro/Desktop/ui_car/build/RelWithDebInfo/carui.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Surface Pro/Desktop/ui_car/build/RelWithDebInfo/carui.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/Surface Pro/Desktop/ui_car" "-BC:/Users/Surface Pro/Desktop/ui_car/build" --check-stamp-file "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\opencv32\build\OpenCVConfig-version.cmake;C:\opencv32\build\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\opencv32\build\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/Surface Pro/Desktop/ui_car" "-BC:/Users/Surface Pro/Desktop/ui_car/build" --check-stamp-file "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\opencv32\build\OpenCVConfig-version.cmake;C:\opencv32\build\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\opencv32\build\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/Surface Pro/Desktop/ui_car" "-BC:/Users/Surface Pro/Desktop/ui_car/build" --check-stamp-file "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\opencv32\build\OpenCVConfig-version.cmake;C:\opencv32\build\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\opencv32\build\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/Surface Pro/Desktop/ui_car" "-BC:/Users/Surface Pro/Desktop/ui_car/build" --check-stamp-file "C:/Users/Surface Pro/Desktop/ui_car/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Surface Pro/Desktop/ui_car/CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\Platform\Windows-MSVC.cmake;C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\3.8.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeCommonLanguageInclude.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\CMakeParseArguments.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\opencv32\build\OpenCVConfig-version.cmake;C:\opencv32\build\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\FindPackageMessage.cmake;C:\opencv32\build\OpenCVModules.cmake;C:\Program Files\CMake\share\cmake-3.8\Modules\AutogenInfo.cmake.in;C:\Users\Surface Pro\Desktop\ui_car\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Surface Pro\Desktop\ui_car\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Surface Pro\Desktop\ui_car\view.hpp" />
+    <ClInclude Include="C:\Users\Surface Pro\Desktop\ui_car\thread_back.hpp" />
+    <ClInclude Include="C:\Users\Surface Pro\Desktop\ui_car\thread_front.hpp" />
+    <ClInclude Include="C:\Users\Surface Pro\Desktop\ui_car\LaneDetector.hpp" />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\main.cpp"  />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\mainwindow.cpp"  />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\thread_back.cpp"  />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\thread_front.cpp"  />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\LaneDetector.cpp"  />
+    <ClCompile Include="C:\Users\Surface Pro\Desktop\ui_car\build\carui_autogen\moc_compilation.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Surface Pro\Desktop\ui_car\build\ZERO_CHECK.vcxproj">
+      <Project>{0CBB10B8-A70A-3D3B-9514-A484DBDE43A5}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
