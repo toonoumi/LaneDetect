@@ -1,4 +1,4 @@
-#include "LaneDetector.h"
+#include "LaneDetector.hpp"
 
 
 LaneDetector::LaneDetector()
@@ -79,6 +79,7 @@ bool LaneDetector::findObj_cp(Mat frame)
 	dilate(frame, frame, element2);*/
 	bool bordered = false;
 	int count = 0;
+    int whiteCount=0;
 	bool isValid = false;
 	bool rNotFail = false;
 	bool lNotFail = false;
@@ -105,28 +106,31 @@ bool LaneDetector::findObj_cp(Mat frame)
 			count++;
 			if (isYellowOrWhite(frame.at<Vec3b>(frame.rows /5* 3 , i - 1))) {
 				//TODO: judge Delta
-				if (isValid&&abs(abs(lborder[1].x - i) - laveragedelta) > DELTA_THRESH) {
-					fails_cp++;
-					break;
-				}
-				ldx_cp[ldxindex_cp] = i;
-				ldxindex_cp++;
-				if (ldxindex_cp >= STORE_SIZE) {
-					ldxindex_cp = 0;
-				}
-				if (ldxcount_cp < STORE_SIZE + 10) {
-					ldxcount_cp++;
-				}
+                whiteCount++;
+                if(whiteCount>=10){
+                    if (isValid&&abs(abs(lborder[1].x - i) - laveragedelta) > DELTA_THRESH) {
+                        fails_cp++;
+                        break;
+                    }
+                    ldx_cp[ldxindex_cp] = i;
+                    ldxindex_cp++;
+                    if (ldxindex_cp >= STORE_SIZE) {
+                        ldxindex_cp = 0;
+                    }
+                    if (ldxcount_cp < STORE_SIZE + 10) {
+                        ldxcount_cp++;
+                    }
 
-				lborder[1] = Point(i, frame.rows /5* 3 );
-				if (lborderPointCount_cp<65535)
-					lborderPointCount_cp++;
+                    lborder[1] = Point(i, frame.rows /5* 3 );
+                    if (lborderPointCount_cp<65535)
+                        lborderPointCount_cp++;
 
-				lNotFail = true;
-				break;
+                    lNotFail = true;
+                    break;
+                }
 			}
 		}
-		if (count >= 5) {
+		if (count >= 10) {
 			count = 0;
 			bordered = false;
 		}
@@ -134,6 +138,7 @@ bool LaneDetector::findObj_cp(Mat frame)
 	}
 	bordered = false;
 	count = 0;
+    whiteCount=0;
 	for (int i = aim; i <frame.cols - 10; i++) {
 		if (isBorder(frame.at<Vec3b>(frame.rows /5* 3 , i), frame.at<Vec3b>(frame.rows /5* 3 , i + 1))) {
 
@@ -144,27 +149,30 @@ bool LaneDetector::findObj_cp(Mat frame)
 			count++;
 			if (isYellowOrWhite(frame.at<Vec3b>(frame.rows /5* 3 , i + 1))) {
 				//TODO:judge delta
-				if (isValid&&abs(abs(rborder[1].x - i) - raveragedelta) > DELTA_THRESH) {
-					fails_cp++;
-					break;
-				}
-				rdx_cp[rdxindex_cp] = i;
-				rdxindex_cp++;
-				if (rdxindex_cp >= STORE_SIZE) {
-					rdxindex_cp = 0;
-				}
-				if (rdxcount_cp < STORE_SIZE + 10) {
-					rdxcount_cp++;
-				}
+                whiteCount++;
+                if(whiteCount>=10){
+                    if (isValid&&abs(abs(rborder[1].x - i) - raveragedelta) > DELTA_THRESH) {
+                        fails_cp++;
+                        break;
+                    }
+                    rdx_cp[rdxindex_cp] = i;
+                    rdxindex_cp++;
+                    if (rdxindex_cp >= STORE_SIZE) {
+                        rdxindex_cp = 0;
+                    }
+                    if (rdxcount_cp < STORE_SIZE + 10) {
+                        rdxcount_cp++;
+                    }
 
-				rborder[1] = Point(i, frame.rows /5* 3 );
-				if (rborderPointCount_cp<65535)
-					rborderPointCount_cp++;
-				rNotFail = true;
-				break;
+                    rborder[1] = Point(i, frame.rows /5* 3 );
+                    if (rborderPointCount_cp<65535)
+                        rborderPointCount_cp++;
+                    rNotFail = true;
+                    break;
+                }
 			}
 		}
-		if (count >= 5) {
+		if (count >= 10) {
 			count = 0;
 			bordered = false;
 		}
@@ -196,8 +204,10 @@ bool LaneDetector::findObj(Mat frame)
 	//erode(frame, frame, element);
 	Mat element2 = getStructuringElement(MORPH_RECT, Size(2, 2));
 	dilate(frame, frame, element2);*/
+    
 	bool bordered = false;
 	int count = 0;
+    int whiteCount=0;
 	bool isValid = false;
 	bool rNotFail = false;
 	bool lNotFail = false;
@@ -224,28 +234,31 @@ bool LaneDetector::findObj(Mat frame)
 			count++;
 			if (isYellowOrWhite(frame.at<Vec3b>(frame.rows / 3 * 2, i - 1))) {
 				//TODO: judge Delta
-				if (isValid&&abs(abs(lborder[0].x - i) - laveragedelta) > DELTA_THRESH){
-					fails++;
-					break;
-				}
-				ldx[ldxindex] = i;
-				ldxindex++;
-				if (ldxindex >= STORE_SIZE) {
-					ldxindex = 0;
-				}
-				if (ldxcount < STORE_SIZE+10) {
-					ldxcount++;
-				}
+                whiteCount++;
+                if(whiteCount>=10){
+                    if (isValid&&abs(abs(lborder[0].x - i) - laveragedelta) >   DELTA_THRESH){
+                        fails++;
+                        break;
+                    }
+                    ldx[ldxindex] = i;
+                    ldxindex++;
+                    if (ldxindex >= STORE_SIZE) {
+                        ldxindex = 0;
+                    }
+                    if (ldxcount < STORE_SIZE+10) {
+                        ldxcount++;
+                    }
 				
-				lborder[0] = Point(i, frame.rows / 3 * 2);
-				if(lborderPointCount<65535)
-				lborderPointCount++;
+                    lborder[0] = Point(i, frame.rows / 3 * 2);
+                    if(lborderPointCount<65535)
+                            lborderPointCount++;
 				
-				lNotFail = true;
-				break;
+                    lNotFail = true;
+                    break;
+                }
 			}
 		}
-		if (count >= 5) {
+		if (count >= 10) {
 			count = 0;
 			bordered = false;
 		}
@@ -253,6 +266,7 @@ bool LaneDetector::findObj(Mat frame)
 	}
 	bordered = false;
 	count = 0;
+    whiteCount=0;
 	for (int i = aim; i <frame.cols-10; i++) {
 		if (isBorder(frame.at<Vec3b>(frame.rows / 3 * 2,i ), frame.at<Vec3b>( frame.rows / 3 * 2,i + 1))) {
 			//lborder[0] = Point(i, frame.rows / 3 * 2);
@@ -265,27 +279,30 @@ bool LaneDetector::findObj(Mat frame)
 			count++;
 			if (isYellowOrWhite(frame.at<Vec3b>( frame.rows / 3 * 2,i + 1))) {
 				//TODO:judge delta
-				if (isValid&&abs(abs(rborder[0].x - i) - raveragedelta) > DELTA_THRESH) {
-					fails++;
-					break;
-				}
-				rdx[rdxindex] = i;
-				rdxindex++;
-				if (rdxindex >= STORE_SIZE) {
-					rdxindex = 0;
-				}
-				if (rdxcount < STORE_SIZE+10) {
-					rdxcount++;
-				}
+                whiteCount++;
+                if(whiteCount>=10){
+                    if (isValid&&abs(abs(rborder[0].x - i) - raveragedelta) > DELTA_THRESH) {
+                        fails++;
+                        break;
+                    }
+                    rdx[rdxindex] = i;
+                    rdxindex++;
+                    if (rdxindex >= STORE_SIZE) {
+                        rdxindex = 0;
+                    }
+                    if (rdxcount < STORE_SIZE+10) {
+                        rdxcount++;
+                    }
 				
-				rborder[0] = Point(i,frame.rows / 3 * 2);
-				if (rborderPointCount<65535)
-				rborderPointCount++;
-				rNotFail = true;
-				break;
+                    rborder[0] = Point(i,frame.rows / 3 * 2);
+                    if (rborderPointCount<65535)
+                        rborderPointCount++;
+                    rNotFail = true;
+                    break;
+                }
 			}
 		}
-		if (count >= 5) {
+		if (count >= 10) {
 			count = 0;
 			bordered = false;
 		}
@@ -311,6 +328,7 @@ bool LaneDetector::findObj(Mat frame)
 	return true;
 }
 
+
 bool LaneDetector::StartCapturing()
 {
 	bool rtn = false;
@@ -319,9 +337,10 @@ bool LaneDetector::StartCapturing()
 
 	
 	if (videoFileName == "Cam") {
-		VideoCapture capture(0);
-		
-		//capture.set(CAP_PROP_EXPOSURE, -2);
+		VideoCapture capture(0);//2
+        //capture.set(CAP_PROP_SETTINGS,0);
+		//capture.set(CV_CAP_PROP_EXPOSURE,1);
+		//capture.set(CAP_PROP_AUTO_EXPOSURE, 0.3);
 		//capture.set(CAP_PROP_SETTINGS, 0);
 		//capture.set();
 		//capture.set(13, 100000);
@@ -344,8 +363,12 @@ bool LaneDetector::StartCapturing()
 			aim = cpy_frame.cols / 2 + AIM_OFFSET;
 			findObj(cpy_frame);
 			line(cpy_frame, Point(aim, 0), Point(aim, cpy_frame.rows), Scalar(0, 255, 255), 2);
-			imshow("CamCap", cpy_frame);		
-            waitKey(10);
+            image = Mat2QImage(cpy_frame);
+            if(!image.isNull())
+            {
+                emit processedImage(image);
+            }
+            this->msleep(50);
 		}
 	}
 	else {
@@ -373,4 +396,25 @@ bool LaneDetector::StartCapturing()
 		}
 	}
 	return rtn;
+}
+
+void LaneDetector::run()
+{
+    StartCapturing();
+    qDebug()<<"go to detect";
+}
+
+QImage LaneDetector::Mat2QImage(const cv::Mat3b &src)
+{
+    QImage dest(src.cols, src.rows, QImage::Format_ARGB32);
+    for (int y = 0; y < src.rows; ++y)
+    {
+        const cv::Vec3b *srcrow = src[y];
+        QRgb *destrow = (QRgb*)dest.scanLine(y);
+        for (int x = 0; x < src.cols; ++x)
+        {
+            destrow[x] = qRgba(srcrow[x][2], srcrow[x][1], srcrow[x][0], 255);
+        }
+    }
+    return dest;
 }
