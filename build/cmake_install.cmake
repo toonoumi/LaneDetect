@@ -1,8 +1,8 @@
-# Install script for directory: /Users/kevincat/Desktop/LaneDetect
+# Install script for directory: C:/Users/Surface Pro/Desktop/ui_car
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/CAR_UI")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/kevincat/Desktop/LaneDetect/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Surface Pro/Desktop/ui_car/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
