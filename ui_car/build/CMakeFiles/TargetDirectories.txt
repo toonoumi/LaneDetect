@@ -1,0 +1,4 @@
+/Users/YunfeiGuo/Desktop/ui_car/build/CMakeFiles/carui.dir
+/Users/YunfeiGuo/Desktop/ui_car/build/CMakeFiles/carui_automoc.dir
+/Users/YunfeiGuo/Desktop/ui_car/build/CMakeFiles/ALL_BUILD.dir
+/Users/YunfeiGuo/Desktop/ui_car/build/CMakeFiles/ZERO_CHECK.dir

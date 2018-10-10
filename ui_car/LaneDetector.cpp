@@ -338,7 +338,7 @@ bool LaneDetector::StartCapturing()
 	
 	if (videoFileName == "Cam") {
 		VideoCapture capture(0);//2
-        //capture.set(CAP_PROP_SETTINGS,0);
+        capture.set(CAP_PROP_SETTINGS,0);
 		//capture.set(CV_CAP_PROP_EXPOSURE,1);
 		//capture.set(CAP_PROP_AUTO_EXPOSURE, 0.3);
 		//capture.set(CAP_PROP_SETTINGS, 0);

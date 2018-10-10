@@ -10,10 +10,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set (CMAKE_PREFIX_PATH "C:/Qt/5.9/msvc2017_64")
-find_package(Qt5 COMPONENTS Widgets core REQUIRED)
+set (CMAKE_PREFIX_PATH "/usr/local/Cellar/qt5/5.8.0_1/")
+find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-set (CMAKE_PREFIX_PATH "C:/opencv32/build")
+#set (CMAKE_PREFIX_PATH "/usr/local/Cellar/opencv3/3.2.0")
 find_package( OpenCV REQUIRED )
 
 # EDIT: add your (non-test) source files to this list
